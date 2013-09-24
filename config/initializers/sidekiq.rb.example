@@ -1,0 +1,11 @@
+SIDEKIQ_REDIS_CONFIG = {
+  :url => "redis://localhost:6379/12"
+}
+
+Sidekiq.configure_server do |config|
+    config.redis = SIDEKIQ_REDIS_CONFIG
+end
+
+Sidekiq.configure_client do |config|
+    config.redis = SIDEKIQ_REDIS_CONFIG
+end

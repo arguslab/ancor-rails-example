@@ -1,0 +1,19 @@
+octopus:
+  replicated: true
+  production:
+    slave1:
+      adapter: mysql
+      encoding: utf8
+      username: user
+      password: password
+      host: slave1
+      port: 3306
+      database: somedb
+    slave2:
+      adapter: mysql
+      encoding: utf8
+      username: user
+      password: password
+      host: slave2
+      port: 3306
+      database: somedb
