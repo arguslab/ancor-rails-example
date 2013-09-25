@@ -16,5 +16,5 @@ gem 'jquery-rails'
 gem 'sass-rails', '~> 3.2.3'
 gem 'uglifier', '~> 2.2.1'
 
-# gem 'unicorn'
+gem 'unicorn'
 gem 'thin'
