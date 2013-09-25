@@ -13,22 +13,13 @@
 
 ActiveRecord::Schema.define(:version => 20130924161018) do
 
-  create_table "contacts", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "phone_number"
-    t.text     "notes"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
   create_table "products", :force => true do |t|
     t.string   "title"
     t.string   "sku"
-    t.decimal  "price"
+    t.decimal  "price",      :precision => 10, :scale => 0
     t.integer  "quantity"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
   end
 
   add_index "products", ["sku"], :name => "index_products_on_sku", :unique => true
