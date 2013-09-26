@@ -20,4 +20,8 @@ class HomeController < ApplicationController
   def work
     EmailWorker.perform_async('fry@planex.com', 'leela@planex.com')
   end
+
+  def migrate
+    ActiveRecord::Migrator.migrate(Rails.root.join('db','migrate'))
+  end
 end
