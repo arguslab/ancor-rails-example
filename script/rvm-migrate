@@ -1,7 +1,0 @@
-#!/bin/bash
-set -e
-
-source /usr/local/rvm/scripts/rvm
-
-rvm use 1.9.3-p448
-bundle exec rake db:migrate
