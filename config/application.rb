@@ -67,5 +67,7 @@ module AncorRailsExample
 
     # http://guides.rubyonrails.org/asset_pipeline.html#precompiling-assets
     config.assets.initialize_on_precompile = false
+
+    config.hostname = Socket.gethostname
   end
 end
