@@ -13,5 +13,5 @@ end
 group :production do
   gem 'makara', github: 'taskrabbit/makara', branch: 'v0.2.2'
   gem 'mysql2'
-  gem 'unicorn'
+  gem 'unicorn', '4.8.3'
 end
