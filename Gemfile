@@ -11,7 +11,7 @@ group :development do
 end
 
 group :production do
-  gem 'makara', github: 'taskrabbit/makara', branch: 'v0.2.2'
+  gem 'makara', github: 'taskrabbit/makara', tag: 'v0.3.x'
   gem 'mysql2'
   gem 'unicorn', '4.8.3'
 end
